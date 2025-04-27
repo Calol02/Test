@@ -1,0 +1,106 @@
+body {background-color: rgb(23, 23, 36)
+  }
+h1 {
+    color: rgb(218, 222, 235);
+    padding: 20px 50px;
+    border-bottom: 1px solid #375e97;
+  }
+  p {
+    color:antiquewhite;
+    
+  }
+   
+  a:link {
+    color: rgb(234, 228, 255);
+  }
+  a:visited {
+    color:rgb(122, 143, 185)
+  }
+   
+  a:hover {
+    text-decoration: none;
+  }
+  body {
+    font:
+      1em/150% Helvetica,
+      Arial,
+      sans-serif;
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 40em;
+  }
+  
+  @media (min-width: em) {
+    body {
+      font-size: 130%;
+    }
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+
+  /*Images */
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .wrapper > * {
+    margin: 20px;
+  }
+  
+  .box {
+    border: 0px solid darkblue;
+    width: 300px;
+    height: 200px;
+  }
+  
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .cover {
+    object-fit: cover;
+  }
+  
+  .contain {
+    object-fit: contain;
+  }
+  
+  /*Motion section */
+  #motion-demo {
+    offset-path: path("M20,20 C20,100 200,0 200,100");
+    animation: move 3000ms infinite alternate ease-in-out;
+    width: 10px;
+    height: 10px;
+    clip-path:circle();
+    background: cyan;
+  }
+  
+  @keyframes move {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 100%;
+    }
+  }
+  
+
+.box{
+  animation-name: slide-in;
+  animation-duration: 1s;
+}
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
