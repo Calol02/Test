@@ -61,10 +61,7 @@ h1 {
     width: 100%;
   }
   
-  .cover {
-    object-fit: cover;
-  }
-  
+
   .contain {
     object-fit: contain;
   }
