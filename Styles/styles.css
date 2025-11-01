@@ -42,18 +42,20 @@ h1 {
 
   /*Images */
   .wrapper {
-    display: flex;
     align-items: flex-start;
+    margin:0;
   }
   
-  .wrapper > * {
-    margin: 20px;
-  }
   
   .box {
     border: 0px solid darkblue;
     width: 300px;
-    height: 200px;
+    height: 300px;
+    padding: 5px;
+    gap:20px;
+    display: flex;
+    flex-wrap: wrap;
+    
   }
   
   img {
@@ -102,3 +104,4 @@ h1 {
     scale: 100% 1;
   }
 }
+
